@@ -17,7 +17,7 @@ Start-Process "C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE"
 Start-Process "powershell" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"Start-Process dsa.msc -Verb RunAs`"" -Credential $credentials
 
 # Launch Group Policy Editor the same way
-Start-Process "powershell" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"Start-Process gpedit.msc -Verb RunAs`"" -Credential $credentials
+Start-Process "powershell" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"Start-Process gpmc.msc -Verb RunAs`"" -Credential $credentials
  
 # Launch MECM Configuration Manager as admin
 # Note: Update the path to where your MECM executable is located
